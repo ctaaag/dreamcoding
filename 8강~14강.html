@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>이미지를 표시해보자</title>
+    </head>
+    <body>
+        <h1 class="title">우리의 <span>소원</span>은 내 집 마련!</h1>
+        <hr>
+        <div id="dream">
+            <img src="images/실습용자료.png" 
+            width="300"  height="300" title="나의다짐"
+            alt="부동산 자료"/>
+            <p>우리는 광명에서 살거야</p>
+        </div>
+        <hr>
+        <div id="location">
+            <h2 class="tilte">여기는 <span>안양천</span>을 끼고 있다</h2>
+            <p>살기가 아주 좋다는 뜻이겠지?</p>
+            <br>
+            <a href="https://www.google.co.kr/maps/place/철산주공8단지아파트/@37.4826542,126.8663217,17z/data=!3m1!4b1!4m5!3m4!1s0x357b61ff6768ff3d:0x5dad3af89a625f1a!8m2!3d37.4826542!4d126.8685104?hl=ko" target="_self">
+                자네, 실제 위치가 궁금하면 클릭하게나
+            </a>
+            <br>
+            <a href="tel:010-6269-6883" target="_self">
+                <img src="images/상담.png"
+                width="20" height="20" title="부동산">
+                하늘부동산
+            </a>
+            <br>
+            <a href="mailto:qudxor102@naver.com" target="_blank">
+                메일로 제안하기
+            </a>
+        </div>
+        <hr>
+        <div id="checklist">
+            <h2 class="title">주요 체크리스트</h2>
+            <ol>
+                <li>임장하기</li>
+                <ul>
+                    <li>햇빛이 잘 드는지</li>
+                    <li>숲뷰인지</li>
+                    <li>환기가 잘 되는지</li>
+                </ul>
+                <li>계약하기</li>
+                <li>잔금납부하기</li>
+            </ol>
+        </div>
+        <hr>
+        <div id="notice">
+            <h2 class="title">느낀 점</h2>
+            주요 특이사항 : <input name="text" type="text" maxlength="9" placeholder="맘에 안드는 것을 적어라"/> <br> <br>
+
+            <input name="push" type="button" value="PUSH"/> <br> <br>
+            
+            맘에 들면 파란색!, 맘에 안들면 빨간색!<input name="color" type="color"/> <br> <br>
+    
+            <input name="score" type="range" max="100" min="0" step="10"/> <br> <br>
+        
+            <input name="birthday" type="date"/> <br> <br>
+        </div>
+        <hr>
+        <div id="result">
+            <h2 class="title">최종평가</h2>
+            <select name="result" multiple>
+                <option value="great" selected>매우 만족</option>
+                <option value="good">만족</option>
+                <option value="notbad">보통</option>
+                <option value="bad">불만족</option>
+                <option value="baddest">매우 불만족</option>
+            </select>
+            <br>
+            <br>
+            <textarea name="content" rows="10" cols="20">너의 총평을 적어줘! </textarea>
+        </div>
+</html>
